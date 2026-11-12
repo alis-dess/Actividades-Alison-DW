@@ -1,12 +1,59 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
+<!--Doctype es una sentecia que indica que voy a trabajar con un 
+documento de HTML-->
+
+<html lang="es"> <!--Aqui inicia mi pagina con la etiqueta de html-->
+<head><!--Aqui en el head esta todo lo que no es visible en la pagina pero lo hace funcional-->
+    <!--Con los metadatos puedo colocar acarecteres especiales, dar informacion al SEO para posicionamiento web-->
+  <meta charset="UTF-8"> <!--Permite carateres especiales-->
+  <meta name="description" content="Musical para Navidad">
+  <meta name="author" content="Alison Rivas">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"> 
+
 <title>Musical Alison</title>
 </head>
 <body>
 
-<h1>Musical Alison</h1>
-<p>Escucha mis 3 canciones de Pop</p>
+    <div class="container-musical">
+      <img src="TS.jpg" alt="Imagen de musical app" class="imagen-portada">
 
+      <h1>Musical Alison</h1>
+      <p class="pmusical">Escucha mis 3 canciones de POP</p>
+
+      <div class="lista-canciones">
+        <!--CANCION 1-->
+        <div class="canciones">
+          <p>💎 Blank Space</p>
+          <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 1 -->
+                    <source src="Blank Space.mp3" type="audio/mpeg">
+                </audio>
+        </div>
+
+        <!--CANCION 2-->
+        <div class="canciones">
+          <p>🐍 Look What You Made Me Do</p>
+          <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 1 -->
+                    <source src="Look What You Made Me Do.mp3" type="audio/mpeg">
+                </audio>
+        </div>
+
+        <!--CANCION 3-->
+        <div class="canciones">
+          <p>🥀 Ophelia</p>
+          <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 1 -->
+                    <source src="Ophelia.mp3" type="audio/mpeg">
+                </audio>
+        </div>
+
+      </div>
+   </div>
+
+   
 </body>
 </html>
