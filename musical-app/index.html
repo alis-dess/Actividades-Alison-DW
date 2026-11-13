@@ -22,38 +22,57 @@ documento de HTML-->
 
       <h1>Musical Alison</h1>
       <p class="pmusical">Escucha mis 3 canciones de POP</p>
-
-      <div class="lista-canciones">
+ 
+     <!--  <div class="lista-canciones"> -->
         <!--CANCION 1-->
-        <div class="canciones">
+        <!-- <div class="canciones">
           <p>💎 Blank Space</p>
-          <audio controls class="audio-player">
+          <audio controls class="audio-player"> -->
                     <!-- Mp3 de prueba 1 -->
-                    <source src="Blank Space.mp3" type="audio/mpeg">
+                    <!-- <source src="Blank Space.mp3" type="audio/mpeg">
                 </audio>
-        </div>
+        </div> -->
 
         <!--CANCION 2-->
-        <div class="canciones">
+        <!-- <div class="canciones">
           <p>🐍 Look What You Made Me Do</p>
-          <audio controls class="audio-player">
+          <audio controls class="audio-player"> -->
                     <!-- Mp3 de prueba 1 -->
-                    <source src="Look What You Made Me Do.mp3" type="audio/mpeg">
+                    <!-- <source src="Look What You Made Me Do.mp3" type="audio/mpeg">
                 </audio>
-        </div>
+        </div> -->
 
         <!--CANCION 3-->
-        <div class="canciones">
+        <!-- <div class="canciones">
           <p>🥀 Ophelia</p>
-          <audio controls class="audio-player">
+          <audio controls class="audio-player"> -->
                     <!-- Mp3 de prueba 1 -->
-                    <source src="Ophelia.mp3" type="audio/mpeg">
+                    <!-- <source src="Ophelia.mp3" type="audio/mpeg">
                 </audio>
         </div>
+      </div> -->
 
-      </div>
+
+      <!-- UNA SOLA CAJA DE REPRODUCTOR -->
+      <div class="canciones">
+        <!-- 1. Le ponemos id="nombre-cancion" para que JS cambie el texto -->
+        <p id="nombre-cancion">💎 Blank Space</p>
+        
+        <!--  Un solo audio con id="audio-player" -->
+        <audio id="audio-player" controls class="audio-player">
+          <source src="Blank Space.mp3" type="audio/mpeg">
+        </audio>
+
+
+        <!-- Agregamos los botones para avanzar y retroceder -->
+        <div class="controles">
+          <button id="btn-anterior">⏮ Anterior</button>
+          <button id="btn-siguiente">Siguiente ⏭</button>
+        </div>
+      </div>      
+      
    </div>
 
-   
+<script src="script.js"></script>
 </body>
 </html>
